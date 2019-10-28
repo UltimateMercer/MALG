@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>MALG - Museu de Arte Leopoldo Gotuzzo</title>
+
+    <style type="text/css">
+
+
+    .bg-transparency-dark{
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+      .img-board{
+        max-width: 12.5rem;
+        height: auto;
+      }
+
+      .portfolium-header{
+        background-color: #070707;
+      }
+
+      .portfolium-block{
+        background-color: #070707;
+      }
+
+      .text-box{
+        background-color: #EAEAEA;
+      }
+
+      .news{
+        background-image: url('https://i.imgur.com/DFUPYfm.jpg');
+        background-size: cover;
+        /*filter: invert(1) hue-rotate(210deg);*/
+      }
+
+      .card-header{
+        border-radius: 0 !important;
+      }
+
+      .card-sizing{
+
+      }
+
+      .come-in {
+        transform: translateY(150px);
+        animation: come-in 0.8s ease forwards;
+      }
+      .come-in:nth-child(odd) {
+        animation-duration: 0.6s;
+      }
+      .already-visible {
+        transform: translateY(0);
+        animation: none;
+      }
+
+      @keyframes come-in {
+        to { transform: translateY(0); }
+      }
+
+      .card-column{
+        text-align: left;
+        column-count: 4;
+        column-gap: 8px; }
+        @media screen and (max-width: 1200px) {
+          section {
+            column-count: 2; } }
+        @media screen and (max-width: 800px) {
+          section {
+            column-count: 1; } }
+        section > .card {
+          margin-bottom: 8px;
+          break-inside: avoid;
+          page-break-inside: avoid;
+          page-break-before: avoid;
+        }
+        .non-style-brand{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+
+        .btn{
+          font-weight: 700;
+        }
+        .bar-malg{
+          height: 10px;
+          width: 100px;
+          position: relative;
+        }
+
+        .obra{
+          width: 60%;
+          height: auto;
+        }
+
+        .tooltip-inner{
+          background-color: #121212;
+          color: #f8f9fa;
+          border-radius: 0;
+        }
+
+        .tooltip.show{
+          opacity: 1;
+        }
+        p {
+          font-size: 1.15rem;
+        }
+
+        .img-title{
+
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 500px;
+
+        }
+
+        .post-header{
+          padding: 250px 0 0px;
+          color: white;
+        }
+    </style>
+  </head>
+  <body class="bg-soft">
+
+    <nav class="navbar navbar-expand navbar-light bg-soft py-md-2">
+      <div class="container">
+        <a class="navbar-brand non-style-brand" href="index.html">
+          <img src="dist/img/logo/malg.png" width="135" class="img-fluid brand" alt="MALG">
+        </a>
+        <div class="navbar-collapse justify-content-stretch">
+          <ul class="navbar-nav ml-auto">
+            <a class="navbar-brand non-style-brand" href="">
+
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="py-4">
+        <img src="dist/img/logo/lg-square.jpg" class="img-fluid rounded-circle mx-auto d-block" alt="">
+      </div>
+      <h1 class="text-center">
+        <span class="py-1 px-1 bg-dark text-grey">
+          <strong>Leopoldo Gotuzzo</strong>
+        </span>
+      </h1>
+    </div>
+
+    <div class="container bg-soft pt-5 pb-5">
+      <div class="col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-10 offset-1">
+        <h2 class="text-light mb-3">
+          <span class="py-1 bg-dark line-teste">
+            <strong>História</strong>
+          </span>
+        </h2>
+        <div class="bar-malg bg-dark mb-3"></div>
+        <div class="mb-4">
+          <h3>
+            <a href="#" class="text-dark mr-3" >
+              <i class="fas fa-volume-up" data-toggle="tooltip" data-placement="right" title="Audiodescrição"></i>
+            </a>
+            <a href="#" class="text-dark mr-3" data-toggle="tooltip" data-placement="right" title="Idioma">
+              <i class="fas fa-language"></i>
+            </a>
+          </h3>
+        </div>
+        <blockquote class="blockquote py-3">
+          <p class="mb-1">
+            <i>
+              "Um grande artista, cujo estilo ligado ao pós-impressionismo tem incontestável marca individual.
+              Sua obra segue uma linha segura e firme. Seus temas, sejam figuras, paisagens, flores ou naturezas
+              mortas servem de pretexto para telas onde a sensibilidade e a técnica aprimorada revelam o desenhista seguro,
+              o colorista nato, em composições espontâneas de fatura desembaraçada. Este é Gotuzzo."
+            </i>
+          </p>
+          <footer class="blockquote-footer">
+            <span class="py-1 bg-dark text-grey">
+              Luciana Araújo Renck Reis, fundadora do MALG e Diretora do Museu de 1986 a 1989. <cite title="Source Title">(L.GOTUZZO:1987:02)</cite>
+
+            </span>
+          </footer>
+        </blockquote>
+
+        <p>
+          O jovem Leopoldo fez seus primeiros estudos com o cônsul italiano Frederico Trebbi, que o aconselhou a seguir para Roma, onde permaneceu por cinco anos, dos quais quatro estudou com o professor Joseph Nöel.
+          Com a morte do mestre, Gotuzzo, aos 27 anos, transferiu-se para Madri e de lá remeteu os primeiros trabalhos para o Salão Nacional de Belas Artes do Rio de Janeiro.
+          Suas premiações, a partir daí, sucederam-se constantemente, cada vez com mais elevado grau.
+        </p>
+
+        <p>
+          Em 1919, de volta ao Brasil, Gotuzzo fez questão de realizar sua primeira mostra individual em Pelotas. Expôs também em Porto Alegre e
+          no Rio de Janeiro, com elogios da imprensa e venda de muitas telas.
+        </p>
+
+        <p>
+          A década de 1920 encontrou Gotuzzo em meio à efervescência da Belle Époque carioca. Esse foi o início de um período áureo de sua carreira,
+          incluindo, entre 1927 e 30, viagem a Portugal, pintando e expondo em Lisboa, Porto e Paris.
+        </p>
+
+        <p>
+          Radicado a maior parte do tempo no Rio de Janeiro, Gotuzzo trabalhou, pintou e expôs mesmo depois dos 80 anos.
+        </p>
+
+        <p>
+          Em 1955 remeteu a primeira coleção de telas para a Escola de Belas Artes de Pelotas, da qual era Patrono com a função de formar o
+          Museu de Arte Leopoldo Gotuzzo. Não chegou a ver instalado o Museu de Artes com seu nome, inaugurado pela Universidade de Pelotas em 1986.
+        </p>
+
+        <h3 class="mt-5 mb-3">
+          <span class="py-1 bg-dark text-grey">
+            Cronologia
+          </span>
+        </h3>
+        <div class="bar-malg bg-dark mb-3"></div>
+        <p>
+          <strong>1887 – </strong>
+          Nascimento de Leopoldo Gotuzzo, a 8 de abril, filho de Caetano Gotuzzo, Italiano de Porto Fino – Liguri,
+          e de Leopoldina Netto Gotuzzo, pelotense.
+        </p>
+
+        <p>
+          <strong>1900 – </strong>
+          Primeiros estudos no Colégio Gonzaga onde recebe distinção em desenho. Cursa pintura com Frederico Trebbi.
+        </p>
+
+        <p>
+          <strong>1909 – </strong>
+          Estudos em Roma, com Joseph Nöel.
+        </p>
+
+        <p>
+          <strong>1914 – </strong>
+          Permanência em Madri, onde inicia seu trabalho independente.
+        </p>
+
+        <p>
+          <strong>1915 – </strong>
+          Expõe o primeiro trabalho: “Madrileña”. Envia obra ao Salão Nacional do Rio de Janeiro e recebe Menção Honrosa,
+          com o quadro “A Mulher de Vestido Preto”.
+        </p>
+
+        <p>
+          <strong>1916 – </strong>
+          Recebe Medalha de Bronze no Salão Nacional do Rio com “Repouso”. Pinta paisagens em Segóvia e transfere-se para Paris.
+        </p>
+
+        <p>
+          <strong> 1917 – </strong>
+          Recebe Pequena Medalha de Prata no Salão Nacional do Rio de Janeiro com um “Estudo de Figura”. (obra do acervo do Clube Comercial de Pelotas).
+          Pinta paisagens em Montigny-sur-Loire.
+        </p>
+
+        <p>
+          <strong>1918 – </strong>
+          Com os bombardeios em Paris, o artista decide voltar ao Brasil e, enquanto aguarda abertura de fronteira, pinta nos Pireneus Orientais.
+          Desembarca em Montevidéu e chega a Pelotas em Novembro.
+        </p>
+
+        <p>
+          <strong>1919 –  </strong>
+          Primeira exposição individual em Pelotas, no Salão da Biblioteca Pública, obtém sucesso apesar da terrível gripe
+          espanhola que assola a cidade. Exposições em Porto Alegre e no Rio de Janeiro. Recebe Grande Medalha de Prata no
+          Salão Nacional de Belas Artes, do Rio de Janeiro com um “Estudo de Nu” (pertence aos descendentes do Dr. Fernando
+          Moreira Osório). Participa como “hors-concours” no Salão Nacional do Rio.
+        </p>
+
+        <p>
+          <strong> 1920 – </strong>
+          Radica-se no Rio de Janeiro, durante o auge da Belle Époque, monta atelier e pinta marinhas, paisagens figuras.
+        </p>
+
+        <p>
+          <strong>1922 – </strong>
+          Medalhas de Ouro no Salão Nacional de Belas Artes do Rio, com “Retrato de Criança” (este quadro foi para França).
+          Expõe no Rio de Janeiro e em São Paulo e faz um cartaz para a campanha contra a tuberculose.
+        </p>
+
+        <p>
+          <strong>1923 – </strong>Realiza a segunda exposição em Pelotas, na Biblioteca Pública, e nova exposição em Porto Alegre.
+          No salão Nacional se destaca “O Antigo forte do Leme” quadro publicado em cromo na revista “Iluminação Brasileira”.
+        </p>
+
+        <p>
+          <strong> 1925 – </strong>
+          Comparece ao Salão Nacional. Junto com Osório Belém frequenta um Curso Livre de Modelo Vivo na sociedade Brasileira de
+          Belas Artes onde faz croquis.
+        </p>
+        <p>
+          <strong> 1926 –  </strong>
+          O quadro “Entrada da Baia do Rio de Janeiro“ é publicado em cromo na “Ilustração Brasileira”.
+        </p>
+        <p>
+          <strong>1927 – </strong>
+          Em julho regressa à Europa e fixa-se em Portugal. Pinta em Porto, Minho e Algarves.
+        </p>
+        <p>
+          <strong>1928 – </strong>
+          Janeiro. Participa da Exposição Íbero Americana de Sevilha numa das galerias de Lisboa.
+        </p>
+        <p>
+          <strong>1929 – </strong>
+          Expõe em Lisboa e no Salão Silva Porto. Viaja para Paris. Pinta na Bretanha e expõe na Galeria Mona Lisa.
+        </p>
+        <p>
+          <strong>1930 – </strong>
+          No final do ano volta ao Brasil, trazendo muitas obras feitas em Portugal e na França.
+        </p>
+        <p>
+          <strong>1933 – </strong>
+          Expõe em Pelotas, Rio Grande e na capital. O governo adquire “Almofada Amarela” para a Biblioteca Pública de Porto Alegre.
+        </p>
+        <p>
+          <strong>1935 – </strong>
+          Pinta na cidade histórica de Piratini, expõe em Pelotas e em Porto Alegre (Centenário Farroupilha).
+        </p>
+        <p>
+          <strong>1939 – </strong>
+          Salão Paulista: Grande Medalha de Prata para “Estudo de Nu”. Grande Prêmio do Rio Grande do Sul no I Salão de Belas Artes de Porto Alegre,
+          realizado pelo Instituto de Belas Artes para comemorar o Cinquentenário da República. Obra: “Écharpe Rosa” Uma segunda versão desta tela,
+          pintada em 1952, foi exposta na Academia Nacional de Belas Artes, do Rio de Janeiro.
+        </p>
+        <p>
+          <strong>1940 – </strong>
+          “Uma Flor” é exposta no 8º Salão Paulista de Belas Artes (reproduzida neste catálogo). Expõe no Salão Nacional do Rio e no Pavilhão Brasileiro
+          da Exposição do Mundo Português, com um óleo da série “Baianas”.
+        </p>
+        <p>
+          <strong>1941 – </strong>
+          Participa da Exposição de Arte Contemporânea, sob a chancela da International Business Corporation, onde apresenta uma baiana.
+        </p>
+        <p>
+          <strong>1943 – </strong>
+          Recebe Medalha de Prata no I Salão de Petrópolis.
+        </p>
+        <p>
+          <strong>1944 – </strong>
+          Participa da I Exposição de Auto-Retratos, no Museu Nacional de Belas Artes, Rio de Janeiro.
+        </p>
+        <p>
+          <strong>1945 – </strong>
+          Salão Paulista: Pequena Medalha de Ouro com “O Velho Pensativo”. Expõe o quadro “Flores e Frutas” na Galeria Montparnasse.
+        </p>
+        <p>
+          <strong>1947 – </strong>
+          Expõe no Salão do Ministério da Educação, no Rio de Janeiro.
+        </p>
+        <p>
+          <strong>1949 – </strong>
+          Expõe em Bagé e em Pelotas, onde recebe homenagem no Clube Comercial.
+          Em São Paulo, no III Salão de Verão, a tela “Cabeça de Velho” é destaque. É convidado para patrono da Escola de Belas Artes de Pelotas.
+        </p>
+        <p>
+          <strong>1950 – </strong>
+          Escreve artigo elogiando os murais de Locatelli na Catedral.
+        </p>
+        <p>
+          <strong>1952 – </strong>
+          Participa na mostra “Um Século de Pintura Brasileira”, no Museu Nacional de Belas Artes, Rio.
+          Prêmio Prefeito do Distrito Federal, no Salão Municipal do Rio.
+        </p>
+        <p>
+          <strong>1954 – </strong>
+          Recebe o Prêmio Assembleia Legislativa no Salão Paulista. Recusa convite para lecionar na Escola de Belas Artes de Pelotas.
+        </p>
+        <p>
+          <strong>1955 –</strong>
+          É criado o Salão Leopoldo Gotuzzo na Escola de Belas Artes de Pelotas, com obras doadas pelo artista.
+        </p>
+        <p>
+          <strong>1956 – </strong>
+          É proposta a Medalha de Honra pelos artistas expositores do Salão Nacional. Gotuzzo recebe 138 votos
+          dos 140 artistas presentes, mas pelos regulamentos, não é considerado eleito.
+        </p>
+        <p>
+          <strong>1961 – </strong>
+          Participação na mostra “Arte Rio-grandense do passado ao Presente” no Instituto de Belas Artes de Porto Alegre.
+        </p>
+        <p>
+          <strong>1962 – </strong>
+          Expõe em Pelotas no Sesquicentenário e recebe homenagem dos antigos alunos do Colégio Gonzaga.
+          Uma de suas baianas ilustra artigo do New York Times Book Review.
+        </p>
+        <p>
+          <strong>1967 – </strong>
+          Recebe Medalha de Ouro no Salão de Maio, promoção da Sociedade Brasileira de Artes.
+        </p>
+        <p>
+          <strong>1968 – </strong>
+          Recebe o título de Benfeitor da Sociedade Brasileira de Belas Artes.
+        </p>
+        <p>
+          <strong>1972 – </strong>
+          Grande retrospectiva em Pelotas pelos seus 85 anos.
+        </p>
+        <p>
+          <strong>1973 – </strong>
+          Grande Medalha de Ouro no Salão de Maio, Rio, com “Figos”. No Salão da Sociedade de Belas Artes recebe o medalhão Youth for Understanding.
+        </p>
+        <p>
+          <strong>1974 – </strong>
+          A APLUB adquire quadros de Gotuzzo.
+        </p>
+        <p>
+          <strong>1977 – </strong>
+          Recebe a Comenda de Grão Oficial na Ordem do Mérito, na Associação de Belas Artes do Rio.
+          A Galeria de Arte do Centro Comercial de Porto Alegre expõe croquis do artista.
+        </p>
+        <p>
+          <strong>1980 – </strong>
+          Recebe o Troféu Zona Sul Desenvolvimento Integral – Destaque em Arte.
+        </p>
+        <p>
+          <strong>1981 – </strong>
+          O V Salão de Pelotas faz homenagem, abrindo seu catálogo com artigo do professor Nelson Abott de Freitas sobre o pintor.
+        </p>
+        <p>
+          <strong>1982 – </strong>
+          É criado um Atelier de Conservação e Restauro na UFPel, para cuidar do acervo da universidade e, em especial, das obras de Gotuzzo.
+        </p>
+        <p>
+          <strong>1983 –  </strong>
+          Falecimento do artista, dia 11 de abril, Rio de Janeiro, aos 96 anos. É realizada a primeira retrospectiva póstuma,
+          pela Prefeitura conjuntamente com a UFPel. A UFPel recebe a coleção de quadros e desenhos legados por Gotuzzo em testamento.
+        </p>
+        <p>
+          <strong>1986 –  </strong>
+          É inaugurado, dia 7 de novembro, o Museu de Arte Leopoldo Gotuzzo, da UFPel.
+        </p>
+        <p>
+          <strong> 1987 – </strong>
+          Abertura Comemorativa do Centenário, dia 8 de abril, com Missa na Capela da Santa Casa de Misericórdia de Pelotas.
+          Exposição de óleos e desenhos na Bolsa de Arte de Porto Alegre, em junho, com catálogo correspondente.
+          Exposição no Museu de Arte do Rio Grande do Sul, em agosto, e no Museu de Arte Leopoldo Gotuzzo, em Pelotas, em outubro,
+          com apoio da Secretaria de Educação e Cultura do Estado e do grupo Empresarial J.H. Santos.
+          Exposição “Flores & Frutos”, no Museu de Arte Leopoldo Gotuzzo, em Pelotas, em outubro, com o apoio de Casarin.
+        </p>
+        <p class="small-text">
+          <em>
+            <small>FONTE: L.GOTUZZO – 1887-1987. Catálogo Bolsa de Arte de Porto Alegre e Escritório de Arte Alto da Bronze. 1987.</small>
+          </em>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <footer class="pt-4 my-md-5 pt-md-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="dist/img/logo/malg.png" alt="" width="135" class="img-fluid brand">
+            <small class="d-block mb-3">
+              <span class="py-1 bg-dark text-grey">
+                Museu de Arte Leopoldo Gotuzzo
+              </span>
+            </small>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="mb-3">
+              <span class="py-1 px-2 bg-dark text-grey">
+                Sobre
+              </span>
+            </h5>
+            <ul class="list-unstyled">
+              <li class="py-1">
+                <a href="about-malg.html">
+                  <span class="py-1 px-2 bg-dark text-grey">
+                    Sobre o museu
+                  </span>
+                </a>
+              </li>
+              <li class="py-1">
+                <a href="about-lg.html">
+                  <span class="py-1 px-2 bg-dark text-grey">
+                     Leopoldo Gotuzzo
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="mb-3">
+              <span class="py-1 px-2 bg-dark text-grey">
+                Contato
+              </span>
+            </h5>
+            <ul class="list-unstyled">
+              <li class="py-1">
+                <a href="https://www.facebook.com/museuleopoldogotuzzo/">
+                  <h5>
+                    <span class="py-1 px-2 bg-dark text-grey">
+                      <i class="fab fa-facebook-square"></i>
+                    </span>
+                  </h5>
+                </a>
+              </li>
+              <li class="py-1">
+                <a href="https://www.instagram.com/museugotuzzo/?hl=pt-br">
+                  <h5>
+                    <span class="py-1 px-2 bg-dark text-grey">
+                      <i class="fab fa-instagram"></i>
+                    </span>
+                  </h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="mb-3">
+              <span class="py-1 px-2 bg-dark text-grey">
+                Localização
+              </span>
+            </h5>
+            <ul class="list-unstyled">
+              <li>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.060588725448!2d-52.3427849!3d-31.7700728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x458a8025e9884022!2sMuseu%20de%20Arte%20Leopoldo%20Gotuzzo%20-%20MALG!5e0!3m2!1spt-BR!2sbr!4v1572049478064!5m2!1spt-BR!2sbr" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="dist/js/teste.js"></script>
+
+
+  </body>
+</html>
