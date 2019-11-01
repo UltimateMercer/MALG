@@ -4,86 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet"-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
     <title>MALG - Museu de Arte Leopoldo Gotuzzo</title>
 
     <style type="text/css">
 
-    .bg-transparency-dark{
-      background: rgba(0, 0, 0, 0.95) !important;
-    }
-      .img-board{
-        max-width: 12.5rem;
-        height: auto;
-      }
 
-      .portfolium-header{
-        background-color: #070707;
-      }
-
-      .portfolium-block{
-        background-color: #070707;
-      }
-
-      .text-box{
-        background-color: #EAEAEA;
-      }
-
-      .news{
-        background-image: url('https://i.imgur.com/DFUPYfm.jpg');
-        background-size: cover;
-        /*filter: invert(1) hue-rotate(210deg);*/
-      }
-
-      .card-header{
-        border-radius: 0 !important;
-      }
-
-      .card-sizing{
-
-      }
-
-      .come-in {
-        transform: translateY(150px);
-        animation: come-in 0.8s ease forwards;
-      }
-      .come-in:nth-child(odd) {
-        animation-duration: 0.6s;
-      }
-      .already-visible {
-        transform: translateY(0);
-        animation: none;
-      }
-
-      @keyframes come-in {
-        to { transform: translateY(0); }
-      }
-
-      .card-column{
-        text-align: left;
-        column-count: 4;
-        column-gap: 8px; }
-        @media screen and (max-width: 1200px) {
-          section {
-            column-count: 2; } }
-        @media screen and (max-width: 800px) {
-          section {
-            column-count: 1; } }
-        section > .card {
-          margin-bottom: 8px;
-          break-inside: avoid;
-          page-break-inside: avoid;
-          page-break-before: avoid;
-        }
-        .non-style-brand{
-          font-family: 'IBM Plex Sans', sans-serif;
-          font-weight: 700;
-          font-size: 1.5rem;
-        }
 
         .btn{
           font-weight: 700;
@@ -135,7 +66,7 @@
           <div class="col-lg-2 offset-lg-0 col-md-6 offset-md-3 col-12 p-0">
             <div class="mt-1 py-2">
               <h2 class=" text-grey mb-3">
-                <span class="py-1 px-2 bg-dark line-teste">
+                <span class="py-1 bg-dark line-teste">
                   <strong>Obra</strong>
                 </span>
               </h2>
@@ -144,25 +75,33 @@
           </div>
         </div>
       <div class="row">
-          <div class="col-lg-5 col-md-12 col-12 pt-1">
-              <div class="sticky-top py-3 px-2">
+        <div class="col-lg-5 col-md-12 col-12 pt-1">
+          <div class="sticky-top py-3 px-2">
+            <div class="col-12">
+              <div class="col-lg-8 offset-lg-2">
                 <div class="">
-                  <div class="">
-                    <img class="img-fluid d-block mx-auto obra" src="dist/img/logo/e-u-g.jpg" title="source: imgur.com" />
-                    <h3 class="text-center text-grey my-4">
-                      <span class="py-1 px-2 bg-dark line-teste">
-                        <strong>Nome da Obra</strong>
-                      </span>
-                    </h3>
-                  </div>
+                  <img class="img-fluid d-block mx-auto" src="dist/img/logo/lg.jpg" />
+                  <div class=""></div>
                 </div>
+                <h3 class="text-center text-grey my-4">
+                  <span class="py-1 bg-dark line-teste">
+                    <strong>Nome da exposição</strong>
+                  </span>
+                </h3>
+
               </div>
             </div>
+
+
+
+          </div>
+        </div>
+
           <div class="col-lg-7 col-md-12 col-12 p-0">
               <div class="col-12">
                 <div class="py-4 px-3">
                   <h3 class="text-grey mb-3">
-                    <span class="py-1 px-2 bg-dark line-teste">
+                    <span class="py-1 bg-dark line-teste">
                       <strong>Sobre a obra</strong>
                     </span>
                   </h3>
@@ -207,7 +146,7 @@
               <div class="col-12">
                 <div class="py-4 px-3">
                   <h3 class="text-grey mb-3">
-                    <span class="py-1 px-2 bg-dark line-teste">
+                    <span class="py-1 bg-dark line-teste">
                       <strong>Autor</strong>
                     </span>
                   </h3>
@@ -225,7 +164,7 @@
                   </div>
                   <div class="row mt-3">
                     <div class="col-lg-3 col-md-4 col-12">
-                      <img class="img-fluid d-block mx-auto shadow-image rounded-circle mb-4" width="250" src="dist/img/logo/e-u-g-s.jpg" title="source: imgur.com" />
+                      <img class="img-fluid d-block mx-auto rounded-circle mb-4" width="250" src="dist/img/logo/lg-square.jpg" title="" />
                     </div>
                     <div class="col-lg-9 col-md-8 col-12">
                       <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -245,84 +184,102 @@
 
     <div class="container">
       <footer class="pt-4 my-md-5 pt-md-5">
-        <div class="row">
-          <div class="col-12 col-md">
-            <img class="mb-2" src="dist/img/logo/malg.png" alt="" width="135" class="img-fluid brand">
-            <small class="d-block mb-3">
-              <span class="py-1 bg-dark text-grey">
-                Museu de Arte Leopoldo Gotuzzo
-              </span>
-            </small>
-          </div>
-          <div class="col-6 col-md">
-            <h5 class="mb-3">
-              <span class="py-1 px-2 bg-dark text-grey">
-                Sobre
-              </span>
-            </h5>
-            <ul class="list-unstyled">
-              <li class="py-1">
-                <a href="about-malg.html">
-                  <span class="py-1 px-2 bg-dark text-grey">
-                    Sobre o museu
-                  </span>
-                </a>
-              </li>
-              <li class="py-1">
-                <a href="about-lg.html">
-                  <span class="py-1 px-2 bg-dark text-grey">
-                     Leopoldo Gotuzzo
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5 class="mb-3">
-              <span class="py-1 px-2 bg-dark text-grey">
-                Contato
-              </span>
-            </h5>
-            <ul class="list-unstyled">
-              <li class="py-1">
-                <a href="https://www.facebook.com/museuleopoldogotuzzo/">
-                  <h5>
-                    <span class="py-1 px-2 bg-dark text-grey">
-                      <i class="fab fa-facebook-square"></i>
-                    </span>
-                  </h5>
-                </a>
-              </li>
-              <li class="py-1">
-                <a href="https://www.instagram.com/museugotuzzo/?hl=pt-br">
-                  <h5>
-                    <span class="py-1 px-2 bg-dark text-grey">
-                      <i class="fab fa-instagram"></i>
-                    </span>
-                  </h5>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5 class="mb-3">
-              <span class="py-1 px-2 bg-dark text-grey">
-                Localização
-              </span>
-            </h5>
-            <ul class="list-unstyled">
-              <li>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.060588725448!2d-52.3427849!3d-31.7700728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x458a8025e9884022!2sMuseu%20de%20Arte%20Leopoldo%20Gotuzzo%20-%20MALG!5e0!3m2!1spt-BR!2sbr!4v1572049478064!5m2!1spt-BR!2sbr" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-              </li>
-            </ul>
-          </div>
+          <div class="row">
+            <div class="col-12 col-md">
+              <img class="mb-2" src="dist/img/logo/malg.png" alt="" width="135" class="img-fluid brand">
+              <small class="d-block mb-3">
+                <span class="py-1 bg-dark text-grey">
+                  Museu de Arte Leopoldo Gotuzzo
+                </span>
+              </small>
 
-        </div>
-      </footer>
+
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="mb-3">
+                <span class="py-1 bg-dark text-grey">
+                  Sobre
+                </span>
+              </h5>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <a href="about-malg.html">
+                    <span class="py-1 bg-dark text-grey">
+                      Sobre o museu
+                    </span>
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a href="about-lg.html">
+                    <span class="py-1 bg-dark text-grey">
+                       Leopoldo Gotuzzo
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="mb-3">
+                <span class="py-1 bg-dark text-grey">
+                  Contato
+                </span>
+              </h5>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <a href="https://www.facebook.com/museuleopoldogotuzzo/">
+                    <h5>
+                      <span class="py-1 px-1 bg-dark text-grey">
+                        <i class="fab fa-facebook-square"></i>
+                      </span>
+                    </h5>
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a href="https://www.instagram.com/museugotuzzo/?hl=pt-br">
+                    <h5>
+                      <span class="py-1 px-1 bg-dark text-grey">
+                        <i class="fab fa-instagram"></i>
+                      </span>
+                    </h5>
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a href="https://www.instagram.com/museugotuzzo/?hl=pt-br">
+                    <h6>
+                      <span class="py-1 bg-dark text-grey">
+                        +55 53 3284.4319
+                      </span>
+                    </h6>
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a href="https://www.instagram.com/museugotuzzo/?hl=pt-br">
+                    <h6>
+                      <span class="py-1 bg-dark text-grey">
+                        secretariamalg@gmail.com
+                      </span>
+                    </h6>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="mb-3">
+                <span class="py-1 bg-dark text-grey">
+                  Localização
+                </span>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.060588725448!2d-52.3427849!3d-31.7700728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x458a8025e9884022!2sMuseu%20de%20Arte%20Leopoldo%20Gotuzzo%20-%20MALG!5e0!3m2!1spt-BR!2sbr!4v1572049478064!5m2!1spt-BR!2sbr" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </footer>
 
     </div>
-
-
 
 
 
